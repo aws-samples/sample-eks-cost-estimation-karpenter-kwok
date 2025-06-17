@@ -1,11 +1,6 @@
-## My Project
+## Migrate to Amazon EKS: data plane cost modelling with Karpenter and KWOK
 
-TODO: Fill this README out!
-
-Be sure to:
-
-* Change the title in this README
-* Edit your repository description on GitHub
+This is a companion repository for blog post: _Migrate to Amazon EKS: data plane cost modelling with Karpenter and KWOK_
 
 ## Security
 
