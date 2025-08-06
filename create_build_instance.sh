@@ -71,6 +71,7 @@ AMI_ID=$(aws ec2 describe-images --owners amazon --filters "Name=name,Values=al2
 # Create a security group (adjust as needed for your VPC)
 SG_ID=$(aws ec2 create-security-group --group-name EC2EKSAccess --description "Security group for EC2 with EKS access" --query 'GroupId' --output text)
 
+# Add your own public IP addresses to restrict the access to the EC2 instance
 aws ec2 authorize-security-group-ingress --group-id $SG_ID --protocol tcp --port 22 --cidr 0.0.0.0/0
 
 # Create a new key pair
